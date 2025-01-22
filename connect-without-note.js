@@ -8,6 +8,7 @@ while (true) {
             connectButton.click();
             await new Promise(resolve => setTimeout(resolve, 1000));
             addNoteButton = document.querySelector("button[aria-label='Send without a note']");
+            addNoteButton.click();
         } catch (error) {
             document.scrollTop = document.scrollHeight;
         }
