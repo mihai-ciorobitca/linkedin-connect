@@ -10,7 +10,7 @@ while (true) {
             addNoteButton = document.querySelector("button[aria-label='Send without a note']");
             addNoteButton.click();
         } catch (error) {
-            document.scrollTop = document.scrollHeight;
+            window.scrollTo(0, document.body.scrollHeight);
         }
     }
     try {
@@ -18,6 +18,6 @@ while (true) {
         document.querySelector("button[aria-label='Next']").click();
         await new Promise(resolve => setTimeout(resolve, 3000));
     } catch (error) {
-        console.log(error)
+        window.scrollTo(0, document.body.scrollHeight);
     }
 }
