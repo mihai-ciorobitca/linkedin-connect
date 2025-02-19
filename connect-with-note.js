@@ -18,12 +18,11 @@ while (true) {
             await new Promise(resolve => setTimeout(resolve, 1000));
             textAreaMessage = document.getElementById("custom-message");
             textAreaMessage.focus();
-            message = `Salut ${userName},
-    
-Sunt programator si vreau sa iti propun creearea unei adrese de email de business.
-Cum ar fi sa ai adresa de email ${email} sau office@my-domain.com ?
+            message = `Salut, ${userName}!
 
-Astept raspunsul tau,
+Îți propun o adresă de email de business, precum ${email} sau office@my-domain.com.
+
+Ce părere ai?
 
 Mihai`
             document.execCommand('insertText', false, message);
